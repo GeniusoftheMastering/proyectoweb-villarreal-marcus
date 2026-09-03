@@ -36,6 +36,93 @@
     </div>
   </header>
 
+<!-- AQUÍ INICIA EL MAIN   -->
+  <main>
+    <!-- HERO con video, SI NO QUIERO VIDEO, pendiente cambiarlo -->
+    <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    
+      <!--Estos son los botones que están dentro del VIDEO-->
+      
+      <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Salsa</a>
+          <a class="btn outline" href="#voluntariado">Sazonador</a>
+        </div>
+
+<!--Esta tarjeta es para colocar estadísticas y la clase de stat es para colocar datos-->
+
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+ de 2,500</div>
+            <div class="stat-label">Comunidades rurales o vulnerables beneficiadas colateralmente</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+500</div>
+            <div class="stat-label">Mujeres mexcanas en diferentes puestos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+10,000</div>
+            <div class="stat-label">Productos Vendidos</div>
+          </div>
+        </div>
+      </div>
+    </section> <!--Fin hero y cierra las estadísticas y todo-->
+
+<!--Aquí hay 3 tarjetas para destacar proyectos, ventas productos o servicios-->
+
+    <section id="proyectos" class="projects container">
+      <h2>El Sabor Gourmet de México</h2>
+      <p class="lead">Cocinamos y entregamos las mejores salsas de chile de árbol y sazonadores con disponibilidad a nivel nacional. Nuestra empresa se compromete con la entrega de productos de la mejor calidad, a que al menos el 70% de nuestro personal sean mujeres mexicanasy, y a brindar un apoyo continuo a comunidades rurales.</p>
+
+
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>Colaboración con productores y agricultores mexicanos.</h3>
+            <p>Capacitación continua con incentivación económica
+              para fomentar el desarrollo individual y también el esparcimiento; la empresa ofrece capacitación en diversas áreas con apoyo económico por parte de la empresa o, en algunos casos, cubriendo la toalidad de las capactiaciones. Se ofrecen certficados, diplomados y maestrías.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>Expansión constante</h3>
+            <p>Hemos hecho colaboraciones con restaurantes en México para llevar nuestro sabor a tus comidas típicas y para lasno tan tradicionales</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="cordoba"></div>
+          <div class="card-body">
+            <h3>Compromiso social y ambiental</h3>
+            <p>Nestros productos se envasan en contenedores 100% ecológicos y nuestros procesos de trabajo y mano de obra protegen y aseguran el cuidado de ambiente laboral, salarios justos e integridad aasegurada en todos los aspectos para nuestros trabajadores.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--Aquí inicia el contacto y las noticias-->
+    
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No te pierdas lo último!</h2>
+          <p>Suscríbete para recibir noticias e historias.</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
+
   <!--Aquí es donde empieza el footer-->
   
   <footer>
@@ -73,6 +160,8 @@
   </div>
 
 </footer>
+
+<!--Aquí termina la parte del footer-->
 
 </body>
 
