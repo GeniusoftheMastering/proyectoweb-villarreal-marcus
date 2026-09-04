@@ -74,7 +74,7 @@
   }
   
     .nav-button:hover {
-    background-color: #7F966F;
+    background-color: #966f6f;
   transform: scale(1.05);
   }
 
@@ -203,7 +203,7 @@
 
 .carousel-btn:hover {
   background: #E8A0BF;
-  color: #fff;
+  color: #ffffff;
 }
 
 .carousel-btn.prev {
@@ -272,7 +272,7 @@
 }
 
 .carousel .btn.outline:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(8, 155, 47, 0.15);
 }
 
 .carousel .stat {
