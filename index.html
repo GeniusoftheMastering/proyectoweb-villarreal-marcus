@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <!--link rel enlaza con la carpeta y el archivo del css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -26,10 +28,11 @@
       </a>
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="#quienessomos">Quienes somos</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Quienes somos</a></li>
+          <li><a href="#nuestros productos">Nuestros Productos</a></li>
           <li><a href="#recetas">Recetas</a></li>
-          <li><a href="#nuestrosazonador">Nuestro Sazonador</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#contacto">Redes Sociales</a></li>
           <li><a class="btn-shop" href="#shop">Shop</a></li>
         </ul>
       </nav>
@@ -38,7 +41,7 @@
   </header>
 
 <!-- AQUÍ INICIA EL MAIN -->
-  <main>
+  <main id="inicio">
     <!-- HERO con video, SI NO QUIERO VIDEO, pendiente cambiarlo -->
     <!--<section class="hero video-hero">-->
       
@@ -90,11 +93,11 @@
         <div class="stats-grid">
           <div class="stat">
             <div class="stat-number">+ de 2,500</div>
-            <div class="stat-label">Comunidades rurales o vulnerables beneficiadas colateralmente</div>
+            <div class="stat-label">Beneficiados</div>
           </div>
           <div class="stat">
             <div class="stat-number">+500</div>
-            <div class="stat-label">Mujeres mexicanas en diferentes puestos laborales</div>
+            <div class="stat-label">Mujeres Empleadas</div>
           </div>
           <div class="stat">
             <div class="stat-number">+10,000</div>
@@ -164,7 +167,25 @@
 
   <!--Aquí es donde empieza el footer-->
   
-  <footer>
+  <footer id="contacto">
+
+    <div class="footer-grid">
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <address>
+          <p>
+            <i class="fa fa-map-marker-alt"></i>
+            <a href="https://maps.app.goo.gl/PagkU66BxEjSvv5g7" target="_blank" rel="noreferrer noopener">
+            <span style="color: #b9ddff; font-weight: bold">Ubicación: </span> Plaza Antara Polanco
+            </a>
+          </p>
+          <p>
+            <i class="fa fa-phone"></i>
+            <span style="color: #b9ddff; font-weight: bold">Teléfono: </span> <a href="tel:+5519224580"> 55 1922 4580</a>
+          </p>
+        </address>
+      </div>
+            
 
   <div class="footer-social">
     <div class="container social-icons">
@@ -205,10 +226,13 @@
       &copy; <span id="anio"></span> DELI-SALZONADORES
     </div>
   </div>
+  </div>
 
 </footer>
 
 <!--Aquí termina la parte del footer-->
+
+<script src="JS/script.js"></script>
 
 </body>
 

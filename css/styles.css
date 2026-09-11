@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    /*modifiqué font-family para cambiar el tipo de letra*/
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .header {
@@ -48,7 +49,12 @@
 
   .main-nav ul {
     display: flex;
+    align-items: center;
+    justify-content: flex end;
+    /* Flex end se utiliza para alinear los elementos al final del contenedor, flex-start se utiliza para alinearlos al inicio */
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
   .main-nav ul li a{
@@ -150,7 +156,8 @@
 
 .carousel {
   position: relative;
-  max-width: 900px;
+  max-width: 100%;
+  /*Se ajusta el ancho del carrusel al 100% del contenedor, pero se puede modificar cambiando el valor de max-width*/
   margin: 1.5rem auto 0;
   overflow: hidden;
   border-radius: 12px;
@@ -180,7 +187,7 @@
   left: 0;
   right: 0;
   margin: 0;
-  padding: 0.8rem;
+  padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   font-weight: 600;
@@ -238,6 +245,7 @@
 
 
 /* Ajustes de botones y stats SUPERPUESTOS dentro del carrusel */
+
 .carousel .hero-content {
   position: absolute;
   top: 0;
@@ -251,6 +259,13 @@
   justify-content: center;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.35); /* oscurece la imagen para que se lea el texto */
+  /* agregar para  evitar que atrape los botones del click*/
+  pointer-events: none;
+}
+
+.carousel .hero-content a, 
+.carousel .hero-content button {
+  pointer-events: auto; /* permite que los botones sean clicables */
 }
 
 .carousel .hero-actions {
@@ -290,8 +305,14 @@
 }
 
 /* Projects */
+
+#proyectos {
+  font-family: "Caacupe One", sans-serif;
+}
+
+
 .projects {
-  padding:3rem 0;
+  padding:3rem 2rem;
 }
 
 .lead {
@@ -301,8 +322,9 @@
 .project-cards {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:1rem;
-  margin-top:1rem;
+  gap:2rem;
+  /* Gap cambia el tamño de mi tarjeta*/
+  margin-top:2rem;
 }
 
 .card {
@@ -360,9 +382,10 @@
 
 /* Newsletter */
 .newsletter {
-  padding:2rem 0;
+  padding:1rem 0;
   background:linear-gradient(90deg, var(--violet-light) 0%, var(--blue-light) 100%);
-  color:#d43d3d;
+  color:#000;
+  background-color: #f29478;
 }
 
 .newsletter-inner {
@@ -378,21 +401,35 @@
   gap:0.5rem;
 }
 
+
 .subscribe-form input {
   padding:0.6rem 0.8rem;
   border-radius:8px;
   border:none;
   outline:none;
+  background: yellow;
 }
 
 .form-message {
   margin-top:0.6rem;
 }
 
-footer {
+.footer .contacto h3{
     width: 100%;
     display: block;
+    background-color: #E8A0BF;
+    padding: 40px 20px 20px;
+    text-align: center;;
 }
+
+ .footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  text-align: left;
+  }
 
 .footer-social {
     width: 100%;
